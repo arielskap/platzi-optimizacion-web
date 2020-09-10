@@ -4,7 +4,7 @@
   "description": "Proyecto del curso de Optimizacion Web de Platzi",
   "author": "@jonalvarezz",
   "scripts": {
-    "start": "npm run dev",
+    "start": "npm run serve",
     "dev": "webpack-dev-server",
     "build": "webpack -p",
     "serve": "serve .",
@@ -23,17 +23,22 @@
   },
   "license": "ISC",
   "devDependencies": {
+    "css-loader": "^4.3.0",
+    "date-fns": "^2.16.1",
     "husky": "^4.2.3",
     "hyperscript": "^2.0.2",
     "lodash": "^4.17.15",
     "lozad": "^1.16.0",
-    "moment": "^2.24.0",
     "prettier": "1.19.1",
     "pretty-quick": "^2.0.1",
     "serve": "^11.3.2",
+    "style-loader": "^1.2.1",
     "webpack": "^4.42.0",
     "webpack-bundle-analyzer": "^3.8.0",
     "webpack-cli": "^3.3.11",
     "webpack-dev-server": "^3.10.3"
+  },
+  "dependencies": {
+    "modal-video": "^2.4.2"
   }
 }

@@ -1,15 +1,19 @@
 import h from 'hyperscript'
-import moment from 'moment'
+import formatDistance from 'date-fns/formatDistance'
+import parseISO from 'date-fns/parseISO'
+// import { formatDistance, parseISO } from 'date-fns';
 
-const relativeDate = dateStr => moment(dateStr, 'YYYY-MM-DD').fromNow()
+const relativeDate = dateStr =>
+  formatDistance(parseISO(dateStr, 'YYYY-MM-DD'), new Date()) //moment(dateStr, 'YYYY-MM-DD').fromNow()
 
 const Controls = ({ slug, youtubeVideoId }) =>
   h(
     'div',
     h(
-      'a',
+      'a.js-modal',
       {
         href: `https://www.youtube.com/watch?v=${youtubeVideoId}`,
+        'data-videoId': youtubeVideoId,
         title: 'Watch trailer',
         target: '_blank',
         rel: 'noreferrer',
