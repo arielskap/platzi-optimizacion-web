@@ -6,7 +6,9 @@
   "scripts": {
     "start": "npm run dev",
     "dev": "webpack-dev-server",
-    "build": "webpack"
+    "build": "webpack -p",
+    "serve": "serve .",
+    "analyze": "npm run build -- --analyze"
   },
   "prettier": {
     "trailingComma": "es5",
@@ -24,10 +26,13 @@
     "husky": "^4.2.3",
     "hyperscript": "^2.0.2",
     "lodash": "^4.17.15",
+    "lozad": "^1.16.0",
     "moment": "^2.24.0",
     "prettier": "1.19.1",
     "pretty-quick": "^2.0.1",
+    "serve": "^11.3.2",
     "webpack": "^4.42.0",
+    "webpack-bundle-analyzer": "^3.8.0",
     "webpack-cli": "^3.3.11",
     "webpack-dev-server": "^3.10.3"
   }

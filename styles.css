@@ -2,18 +2,18 @@
  * Home page
  *******************************************
  */
-html {
-  font-family: Helvetica, Arial, sans-serif;
-}
-
-html.wf-active {
-  font-family: 'Muli';
-}
-
 body {
   margin: 0;
   background: #21c08b;
   background-image: linear-gradient(#21c08b, #8f57fd);
+}
+
+html {
+  font-family: Helvetica, Ariel, sans-serif;
+}
+
+html.wf-active {
+  font-family: 'Muli', sans-serif;
 }
 
 * {
@@ -106,7 +106,7 @@ ul:hover {
   cursor: pointer;
 }
 
-.header__menu--profile > img {
+.header__menu--profile > svg {
   margin-right: 8px;
   width: 40px;
 }
@@ -179,15 +179,15 @@ footer a {
 }
 
 .carousel {
-  overflow: scroll;
+  overflow-x: scroll;
+  overflow-y: hidden;
   padding-left: 30px;
   width: 100%;
   position: relative;
 }
 
 .carousel__container {
-  font-size: 0;
-  white-space: nowrap;
+  display: flex;
   margin: 70px 0px;
   padding-bottom: 25px;
 }
@@ -196,8 +196,8 @@ footer a {
   will-change: transform;
   border-radius: 20px;
   position: relative;
-  display: inline-block;
   width: 200px;
+  min-width: 200px;
   height: 250px;
   margin-right: 10px;
   font-size: 20px;
