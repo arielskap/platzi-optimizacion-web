@@ -9,7 +9,8 @@
     "dev": "concurrently \"webpack -w\" \"micro-dev\"",
     "export": "node export.js",
     "build": "webpack -p && node export",
-    "serve": "serve ."
+    "serve": "serve .",
+    "audit": "lighthouse http://localhost:5000 --output json | clip"
   },
   "prettier": {
     "trailingComma": "es5",
@@ -29,6 +30,7 @@
     "date-fns": "^2.12.0",
     "husky": "^4.2.3",
     "hyperscript": "^2.0.2",
+    "lighthouse": "^6.3.0",
     "lodash": "^4.17.19",
     "lozad": "^1.14.0",
     "micro": "^9.3.4",

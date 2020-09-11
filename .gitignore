@@ -3,3 +3,9 @@ node_modules
 *.log
 dist
 index.html
+.DS_Store
+node_modules
+*.log
+dist
+
+localhost*
